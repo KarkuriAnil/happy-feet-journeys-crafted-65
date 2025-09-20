@@ -15,6 +15,8 @@ import CulturalTours from "./pages/holidays/CulturalTours";
 import FamilyGetaways from "./pages/holidays/FamilyGetaways";
 import Enquiry from "./pages/Enquiry";
 import Contact from "./pages/Contact";
+import PrivilegePass from "./pages/PrivilegePass";
+import ServicePartners from "./pages/ServicePartners";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +38,8 @@ const App = () => (
               <Route path="/holidays/mountain-treks" element={<MountainTreks />} />
               <Route path="/holidays/cultural-tours" element={<CulturalTours />} />
               <Route path="/holidays/family-getaways" element={<FamilyGetaways />} />
+              <Route path="/privilege-pass" element={<PrivilegePass />} />
+              <Route path="/service-partners" element={<ServicePartners />} />
               <Route path="/enquiry" element={<Enquiry />} />
               <Route path="/contact" element={<Contact />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

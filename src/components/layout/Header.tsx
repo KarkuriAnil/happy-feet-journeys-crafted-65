@@ -22,6 +22,8 @@ const Header = () => {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
     { name: "Holidays", href: "/holidays" },
+    { name: "Happy Privilege Pass", href: "/privilege-pass" },
+    { name: "Our Service Partners", href: "/service-partners" },
     { name: "Enquiry", href: "/enquiry" },
     { name: "Contact Us", href: "/contact" },
   ];
