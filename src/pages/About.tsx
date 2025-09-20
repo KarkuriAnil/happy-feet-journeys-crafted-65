@@ -14,6 +14,7 @@ import {
   Leaf,
   Zap
 } from "lucide-react";
+import happyFeetLogo from "@/assets/happy-feet-logo.png";
 
 const About = () => {
   const visionPillars = [
@@ -100,8 +101,15 @@ const About = () => {
       <section className="py-20 bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
+            <div className="flex justify-center mb-6">
+              <img 
+                src={happyFeetLogo} 
+                alt="Happy Feet Holidays Logo"
+                className="w-20 h-20 object-contain"
+              />
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              About Happy Feet Holidays
+              About <span className="text-primary">Happy Feet Holidays</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Where dreams meet destinations, and every journey becomes an unforgettable story.

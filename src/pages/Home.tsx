@@ -38,6 +38,8 @@ import customerVenkateshChaitra from "@/assets/customer-venkatesh-chaitra.png";
 import customerRinilNagma from "@/assets/customer-rinil-nagma.png";
 import packageBackground from "@/assets/package-background.png";
 import packageIllustration from "@/assets/package-illustration.png";
+import familyMemoriesImage from "@/assets/family-memories.png";
+import happyFeetLogo from "@/assets/happy-feet-logo.png";
 
 const Home = () => {
   const handleWhatsAppClick = () => {
@@ -208,8 +210,15 @@ const Home = () => {
         </div>
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+          <div className="flex justify-center mb-6">
+            <img 
+              src={happyFeetLogo} 
+              alt="Happy Feet Holidays Logo"
+              className="w-24 h-24 md:w-32 md:h-32 object-contain"
+            />
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Happy Feet Holidays.{" "}
+            <span className="text-yellow-300">Happy Feet Holidays</span>{" "}
             <span className="text-blue-300">
               Unforgettable Memories.
             </span>
@@ -245,46 +254,46 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Happy Feet Package Section */}
+      {/* Happy Feet Family Memories Section */}
       <section className="relative py-20 overflow-hidden bg-gradient-to-br from-primary/5 via-accent/10 to-primary/15">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <img 
-            src={packageBackground} 
-            alt="Package Background"
-            className="w-full h-full object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-vibrant opacity-10"></div>
-        </div>
-        
         <div className="relative z-10 container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center lg:justify-start">
+              <img 
+                src={familyMemoriesImage} 
+                alt="Happy Feet Holidays - Creating Family Memories"
+                className="max-w-md w-full h-auto rounded-2xl shadow-strong glow-effect"
+              />
+            </div>
+            
             <div className="text-foreground">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-ocean bg-clip-text text-transparent shimmer">
-                HAPPY FEET PACKAGE
-              </h2>
-              <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                From quick getaways to a lifetime of adventures, Happy Feet Holidays offers the perfect package 
-                for every traveller. Whether it's a year of timeless escapes or five years of unforgettable 
-                expeditions, each plan is crafted to give you magical moments, breathtaking destinations, 
-                and memories that last forever. Choose your journey… and let the adventure begin!
+              <div className="flex items-center mb-4">
+                <img 
+                  src={happyFeetLogo} 
+                  alt="Happy Feet Logo"
+                  className="w-12 h-12 mr-3"
+                />
+                <h2 className="text-4xl md:text-5xl font-bold bg-gradient-ocean bg-clip-text text-transparent shimmer">
+                  HAPPY FEET HOLIDAYS
+                </h2>
+              </div>
+              <p className="text-lg md:text-xl leading-relaxed text-muted-foreground mb-6">
+                No toy or gadget can replace the magic of a holiday spent together watching your child's eyes 
+                light up at a new sight, holding hands while exploring unknown streets, and sharing laughter 
+                over simple joys.
+              </p>
+              <p className="text-lg leading-relaxed text-muted-foreground mb-8">
+                <strong className="text-primary">Happy Feet Holidays</strong> designs trips that aren't just vacations, 
+                but the threads that weave your family's most beautiful memories.
               </p>
               <div className="mt-8">
                 <Button variant="hero" size="lg" className="glow-effect" asChild>
                   <Link to="/enquiry">
-                    Explore Packages
+                    Create Memories
                     <ArrowRight className="w-5 h-5" />
                   </Link>
                 </Button>
               </div>
-            </div>
-            
-            <div className="flex justify-center lg:justify-end">
-              <img 
-                src={packageIllustration} 
-                alt="Travel Destinations"
-                className="max-w-md w-full h-auto rounded-2xl shadow-strong glow-effect"
-              />
             </div>
           </div>
         </div>
@@ -343,9 +352,16 @@ const Home = () => {
       <section className="py-20 bg-gradient-to-br from-background via-primary/5 to-accent/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 shimmer bg-clip-text text-transparent">
-              Why Choose Happy Feet Holidays?
-            </h2>
+            <div className="flex items-center justify-center mb-6">
+              <img 
+                src={happyFeetLogo} 
+                alt="Happy Feet Logo"
+                className="w-16 h-16 mr-4"
+              />
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground shimmer bg-clip-text text-transparent">
+                Why Choose Happy Feet Holidays?
+              </h2>
+            </div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Our commitment to excellence ensures every journey exceeds expectations
             </p>

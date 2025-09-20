@@ -15,6 +15,11 @@ import {
   Music
 } from "lucide-react";
 import culturalImage from "@/assets/cultural-tour.jpg";
+import northIndiaCuisine from "@/assets/north-india-cuisine.png";
+import southIndiaCuisine from "@/assets/south-india-cuisine.png";
+import eastIndiaCuisine from "@/assets/east-india-cuisine.png";
+import westIndiaCuisine from "@/assets/west-india-cuisine.png";
+import happyFeetLogo from "@/assets/happy-feet-logo.png";
 
 const CulturalTours = () => {
   const destinations = [
@@ -150,8 +155,13 @@ const CulturalTours = () => {
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-3xl text-white">
             <div className="flex items-center space-x-2 mb-4">
+              <img 
+                src={happyFeetLogo} 
+                alt="Happy Feet Logo"
+                className="w-8 h-8"
+              />
               <Building className="w-8 h-8" />
-              <span className="text-sm uppercase tracking-wider">Cultural Experiences</span>
+              <span className="text-sm uppercase tracking-wider">Happy Feet Cultural Experiences</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Cultural Tours
@@ -362,15 +372,74 @@ const CulturalTours = () => {
         </div>
       </section>
 
+      {/* Regional Cuisine Experience */}
+      <section className="py-20 bg-gradient-to-b from-secondary/20 to-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center mb-6">
+              <img 
+                src={happyFeetLogo} 
+                alt="Happy Feet Logo"
+                className="w-12 h-12 mr-3"
+              />
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                Taste the Culture: Regional Cuisines
+              </h2>
+            </div>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Experience India's rich culinary heritage through authentic regional flavors and cooking traditions
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="text-center">
+              <img 
+                src={northIndiaCuisine} 
+                alt="North India Cuisine"
+                className="w-full h-auto rounded-xl shadow-medium mb-4"
+              />
+            </div>
+            <div className="text-center">
+              <img 
+                src={southIndiaCuisine} 
+                alt="South India Cuisine"
+                className="w-full h-auto rounded-xl shadow-medium mb-4"
+              />
+            </div>
+            <div className="text-center">
+              <img 
+                src={eastIndiaCuisine} 
+                alt="East India Cuisine"
+                className="w-full h-auto rounded-xl shadow-medium mb-4"
+              />
+            </div>
+            <div className="text-center">
+              <img 
+                src={westIndiaCuisine} 
+                alt="West India Cuisine"
+                className="w-full h-auto rounded-xl shadow-medium mb-4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Ready to Explore India's Rich Heritage?
-            </h2>
+            <div className="flex items-center justify-center mb-6">
+              <img 
+                src={happyFeetLogo} 
+                alt="Happy Feet Logo"
+                className="w-12 h-12 mr-3"
+              />
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                Ready to Explore India's Rich Heritage?
+              </h2>
+            </div>
             <p className="text-lg text-muted-foreground mb-8">
-              Embark on a cultural journey that will deepen your understanding and 
+              Embark on a cultural journey with <strong className="text-primary">Happy Feet Holidays</strong> that will deepen your understanding and 
               appreciation of India's diverse traditions and timeless heritage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

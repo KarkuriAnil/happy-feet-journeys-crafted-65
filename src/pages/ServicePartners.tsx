@@ -3,6 +3,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Building2, Plane, Hotel, Car, MapPin, Users, Star, Globe } from "lucide-react";
+import resortsNetworkMap from "@/assets/resorts-network-map.png";
+import happyFeetLogo from "@/assets/happy-feet-logo.png";
 
 const ServicePartners = () => {
   const partnerCategories = [
@@ -72,13 +74,39 @@ const ServicePartners = () => {
       {/* Hero Section */}
       <section className="py-20 px-4 text-center bg-gradient-subtle">
         <div className="container mx-auto max-w-4xl">
+          <div className="flex justify-center mb-6">
+            <img 
+              src={happyFeetLogo} 
+              alt="Happy Feet Holidays Logo"
+              className="w-16 h-16 object-contain"
+            />
+          </div>
           <p className="text-primary font-medium mb-4 uppercase tracking-wider">TRUSTED NETWORK</p>
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-            Our Service Partners
+            <span className="text-primary">Happy Feet Holidays</span> Service Partners
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
             We collaborate with the finest service providers to ensure exceptional travel experiences
           </p>
+        </div>
+      </section>
+
+      {/* Resort Network Map */}
+      <section className="py-16 px-4 bg-background">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-4">Our Resort Networks</h2>
+            <p className="text-lg text-muted-foreground">
+              Discover our extensive network of partner resorts across India's most beautiful destinations
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <img 
+              src={resortsNetworkMap} 
+              alt="Happy Feet Holidays Resort Network Map"
+              className="max-w-full h-auto rounded-xl shadow-strong"
+            />
+          </div>
         </div>
       </section>
 
