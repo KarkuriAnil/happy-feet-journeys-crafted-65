@@ -41,7 +41,8 @@ const Contact = () => {
         "10th Main Road, Cauvery Nagar, Banashankari Stage 3",
         "Bengaluru 560085"
       ],
-      action: "Get Directions"
+      action: "Get Directions",
+      href: "https://maps.google.com/?q=No.115/26/A/1,+Shop+No.2,+Poorna+Pragna+Layout,+10th+Main+Road,+Cauvery+Nagar,+Banashankari+Stage+3,+Bengaluru+560085"
     },
     {
       icon: Phone,
@@ -50,7 +51,8 @@ const Contact = () => {
         "Main: +91 9845018635",
         "WhatsApp: +91 9845018635"
       ],
-      action: "Call Now"
+      action: "Call Now",
+      href: "tel:+919845018635"
     },
     {
       icon: Mail,
@@ -58,7 +60,8 @@ const Contact = () => {
       details: [
         "General: Happyfeetholidayss@gmail.com"
       ],
-      action: "Send Email"
+      action: "Send Email",
+      href: "mailto:Happyfeetholidayss@gmail.com?subject=Travel%20Enquiry"
     },
     {
       icon: Clock,
@@ -68,7 +71,8 @@ const Contact = () => {
         "Saturday: 10:00 AM - 6:00 PM",
         "Sunday: 11:00 AM - 4:00 PM"
       ],
-      action: "Plan Visit"
+      action: "Plan Visit",
+      href: "tel:+919845018635"
     }
   ];
 
@@ -119,9 +123,14 @@ const Contact = () => {
                               </p>
                             ))}
                           </div>
-                          <Button variant="link" className="p-0 h-auto mt-2 text-primary">
+                          <a 
+                            href={info.href}
+                            target={info.title === "Office Location" ? "_blank" : "_self"}
+                            rel={info.title === "Office Location" ? "noopener noreferrer" : undefined}
+                            className="inline-flex items-center text-sm text-primary hover:text-primary/80 transition-colors duration-200 font-medium"
+                          >
                             {info.action} →
-                          </Button>
+                          </a>
                         </div>
                       </div>
                     </CardContent>
@@ -140,10 +149,16 @@ const Contact = () => {
                     <p className="text-muted-foreground mb-4">
                       Find our office location and get directions
                     </p>
-                    <Button variant="outline">
-                      View on Google Maps
-                      <ArrowRight className="w-4 h-4" />
-                    </Button>
+                    <a 
+                      href="https://maps.google.com/?q=No.115/26/A/1,+Shop+No.2,+Poorna+Pragna+Layout,+10th+Main+Road,+Cauvery+Nagar,+Banashankari+Stage+3,+Bengaluru+560085"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button variant="outline">
+                        View on Google Maps
+                        <ArrowRight className="w-4 h-4" />
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </CardContent>
